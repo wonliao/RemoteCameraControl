@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="imagePreviewView" destination="yAP-Qf-LWe" id="NxT-8D-wsg"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yAP-Qf-LWe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qh-8P-GRR">
+                    <rect key="frame" x="123" y="385" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="bJe-dc-zLS"/>
+                        <constraint firstAttribute="width" constant="75" id="uh7-DG-6DX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Photo" backgroundImage="Pix_Camera_TakePicture.png">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="takePhoto:" destination="-1" eventType="touchUpInside" id="9wJ-gZ-If2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yAP-Qf-LWe" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="AJo-uh-AoT"/>
+                <constraint firstAttribute="trailing" secondItem="3Qh-8P-GRR" secondAttribute="trailing" constant="122" id="JuR-tI-uw5"/>
+                <constraint firstItem="3Qh-8P-GRR" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="123" id="SUz-Hc-r9p"/>
+                <constraint firstItem="yAP-Qf-LWe" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="abv-va-RtF"/>
+                <constraint firstItem="yAP-Qf-LWe" firstAttribute="top" secondItem="1" secondAttribute="top" id="ats-gw-raX"/>
+                <constraint firstItem="yAP-Qf-LWe" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="kTB-uH-Ad4"/>
+                <constraint firstAttribute="bottom" secondItem="3Qh-8P-GRR" secondAttribute="bottom" constant="20" id="wVP-Am-Iae"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Pix_Camera_TakePicture.png" width="150" height="150"/>
+    </resources>
+</document>
