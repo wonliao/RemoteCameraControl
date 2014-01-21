@@ -6,7 +6,7 @@ RemoteCameraControl
 
 youtube 影片
 
-[![youtube 影片](http://img.youtube.com/vi/ieyxXpgEBvw/0.jpg)](http://www.youtube.com/watch?v=ieyxXpgEBvw)
+[![youtube 影片](http://img.youtube.com/vi/cF7OTBo50G8/0.jpg)](http://www.youtube.com/watch?v=cF7OTBo50G8)
 
 說明
 
